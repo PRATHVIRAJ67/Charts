@@ -1,9 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import RechartsPage from "./Recharts/Recharts";
-import NivoPage from "./Nivo/Nivocharts";
-import ApacheEChartsPage from "./ApacheEcharts/ApacheChart";
+// import NivoPage from "./Nivo/Nivocharts";
+// import ApacheEChartsPage from "./ApacheEcharts/ApacheChart";
 // import VisxPage from "./Visk/Viskcharts";
-// import Home from "./Homepage";
 import "./App.css"; // Import the CSS file
 
 export default function App() {
@@ -14,24 +13,31 @@ export default function App() {
 
         <nav className="navbar">
           <Link to="/recharts">
-            {/* <button>Custon Note IQ Charts</button> */}
+            <button>Custon Note IQ Charts</button>
           </Link>
-          {/* <Link to="/nivo">
+          {/*
+          <Link to="/nivo">
             <button>Nivo</button>
           </Link>
           <Link to="/echarts">
             <button>Appache ECharts</button>
-          </Link> */}
-          {/* <Link to="/visx">
+          </Link>
+          <Link to="/visx">
             <button>Visx</button>
-          </Link> */}
+          </Link>
+          */}
         </nav>
 
         <Routes>
+          {/* Default home page route */}
+          <Route path="/" element={<RechartsPage />} />
+
           <Route path="/recharts" element={<RechartsPage />} />
+          {/*
           <Route path="/nivo" element={<NivoPage />} />
           <Route path="/echarts" element={<ApacheEChartsPage />} />
-          {/* <Route path="/visx" element={<VisxPage />} /> */}
+          <Route path="/visx" element={<VisxPage />} />
+          */}
         </Routes>
       </div>
     </Router>
