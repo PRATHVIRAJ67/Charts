@@ -4,11 +4,11 @@ const AreaChart = ({ data, width = 700, height = 300, areas, xKey }) => {
   return (
     <AreaChartLib
       data={data}
-      xKey={xKey}        // make xKey dynamic
+      xKey={xKey}        
       width={width}
       height={height}
       areas={areas}
-      showTooltip={true} // optional, for better UX
+      showTooltip={true} 
       showLegend={true}  
     />
   );

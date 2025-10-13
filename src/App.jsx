@@ -4,6 +4,7 @@ import RechartsPage from "./Recharts/Recharts";
 // import ApacheEChartsPage from "./ApacheEcharts/ApacheChart";
 // import VisxPage from "./Visk/Viskcharts";
 import "./App.css"; // Import the CSS file
+import SimpleTable from "./Recharts/Table";
 
 export default function App() {
   return (
@@ -14,6 +15,9 @@ export default function App() {
         <nav className="navbar">
           <Link to="/recharts">
             <button>Custon Note IQ Charts</button>
+          </Link>
+            <Link to="/table">
+            <button>Note IQ Table</button>
           </Link>
           {/*
           <Link to="/nivo">
@@ -33,6 +37,7 @@ export default function App() {
           <Route path="/" element={<RechartsPage />} />
 
           <Route path="/recharts" element={<RechartsPage />} />
+             <Route path="/table" element={<SimpleTable />} />
           {/*
           <Route path="/nivo" element={<NivoPage />} />
           <Route path="/echarts" element={<ApacheEChartsPage />} />

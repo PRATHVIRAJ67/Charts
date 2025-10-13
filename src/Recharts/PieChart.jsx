@@ -7,11 +7,11 @@ const PieChart = ({ data, colors, pies, showTooltip = true }) => {
       colors={colors}
       pies={pies}
       showTooltip={showTooltip}
-      showLegend={true}          // enable legend
-      legend={{                  // move legend below
-        position: "bottom",      // try "bottom" or "top"
-        layout: "horizontal",    // make it horizontal
-        align: "center"          // center align
+      showLegend={true}          
+      legend={{                 
+        position: "bottom",   
+        layout: "horizontal",    
+        align: "center"          
       }}
     />
   );
